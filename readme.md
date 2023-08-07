@@ -48,6 +48,8 @@ contains additional data to complement the main InVADo repository
 ## Building InVADo:
 
 - run CMake for MegaMol/InVADo (configure)
+  - set visual studio 2022
+  - set x64
 - ignore warnings during configure
 - _check/do the following boxes/steps:_
   - [x] ENABLE_MPI
@@ -58,6 +60,7 @@ contains additional data to complement the main InVADo repository
   - configure again
   - generate
   - open project
+  - (may need to install .NET Framework 4.8.1 SDK)
 - set the 'INSTALL' target of 'CMakePredefinedTargets' as start project
 - build and install it as "RELEASE" not "DEBUG"
 - "DEBUG" is possible as well, but if the docking data set is not already preprocessed by InVADo as RELEASE version it will fail to start as DEBUG version

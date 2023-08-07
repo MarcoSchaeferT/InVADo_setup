@@ -39,7 +39,7 @@ contains additional data to complement the main InVADo repository
   - [x] Download debugging symbols
   - [x] Download debug binaries
 - PLIP running in Linux subsystem must be installed via the script: run_plip_install.cmd
-- the rest of the need programs is downloaded via CMake
+- the rest of the needed programs is downloaded via CMake
 
 ## Building InVADo:
 

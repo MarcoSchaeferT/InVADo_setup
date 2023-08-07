@@ -24,13 +24,13 @@ contains additional data to complement the main InVADo repository
 
 - operating system: windows 10 or 11
 - GPU: NVIDIA
-- CUDA (tested CUDA 11)
-- linux subsystem (tested 22.04 LTS)
-- CMake (tested 3.26)
-- Visual Studio (tested version of 2022)
-- node.js v16 (tested 16.20.1)
-- Microsoft MPI
-- Python 3.10
+- CUDA (tested CUDA 11.6) https://developer.nvidia.com/cuda-11-6-0-download-archive
+- linux subsystem (tested 22.04 LTS) https://learn.microsoft.com/en-us/windows/wsl/install
+- CMake (tested 3.26) https://cmake.org/download/
+- Visual Studio (tested version of 2022) https://visualstudio.microsoft.com/de/vs/
+- node.js v16 (tested 16.20.1) https://nodejs.org/en/blog/release/v16.20.0
+- Microsoft MPI (https://www.microsoft.com/en-us/download/details.aspx?id=105289)
+- Python 3.10 (https://www.python.org/downloads/release/python-3100/)
   #### (during installation following additional options must be checked [x])
   - [x] Add to Path
   - use --> Customize Installation
@@ -45,9 +45,9 @@ contains additional data to complement the main InVADo repository
 
 - run CMake for MegaMol/InVADo (configure)
 - _check/do the following boxes/steps:_
-  - [x] use MPI
+  - [x] ENABLE_MPI
   - set 'MPI_GUESS_LIBRARY_NAME' to 'MSMPI'
-  - [x] use CUDA
+  - [x] ENABLE_CUDA
   - [x] BUILD_PROLINT_PLUGIN
   - [x] BUILD_PROTEIN_CUDA_PLUGIN
   - configure again

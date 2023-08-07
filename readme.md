@@ -30,15 +30,18 @@ contains additional data to complement the main InVADo repository
 - Visual Studio (tested version of 2022) https://visualstudio.microsoft.com/de/vs/
 - node.js v16 (tested 16.20.1) https://nodejs.org/en/blog/release/v16.20.0
 - Microsoft MPI (install both msmpisdk.msi; msmpisetup.exe) https://www.microsoft.com/en-us/download/details.aspx?id=105289
-- Python 3.10 https://www.python.org/downloads/release/python-3100/
 - Firefox (tested 116.0.1) https://www.mozilla.org/de/firefox/new/
+- Python 3.10 https://www.python.org/downloads/release/python-3100/
+
   #### (during installation following additional options must be checked [x])
+
   - [x] Add to Path
   - use --> Customize Installation
   - click 'Next'
   - [x] Precompile Standard Library
   - [x] Download debugging symbols
   - [x] Download debug binaries
+
 - PLIP running in Linux subsystem must be installed via the script: run_plip_install.cmd
 - the rest of the needed programs is downloaded via CMake
 

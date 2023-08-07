@@ -44,6 +44,7 @@ contains additional data to complement the main InVADo repository
 ## Building InVADo:
 
 - run CMake for MegaMol/InVADo (configure)
+- ignore warnings during configure
 - _check/do the following boxes/steps:_
   - [x] ENABLE_MPI
   - set 'MPI_GUESS_LIBRARY_NAME' to 'MSMPI'

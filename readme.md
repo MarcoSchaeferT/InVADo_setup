@@ -31,6 +31,7 @@ contains additional data to complement the main InVADo repository
 - node.js v16 (tested 16.20.1) https://nodejs.org/en/blog/release/v16.20.0
 - Microsoft MPI (install both msmpisdk.msi; msmpisetup.exe) https://www.microsoft.com/en-us/download/details.aspx?id=105289
 - Python 3.10 https://www.python.org/downloads/release/python-3100/
+- Firefox (tested 116.0.1) https://www.mozilla.org/de/firefox/new/
   #### (during installation following additional options must be checked [x])
   - [x] Add to Path
   - use --> Customize Installation

@@ -1,0 +1,14 @@
+receptor = ./7nn9_autoDockTools.pdbqt
+
+center_x = 19.136
+center_y = 20.307
+center_z = 55.097
+
+size_x = 126
+size_y = 126
+size_z = 126
+
+exhaustiveness = 24
+
+num_modes = 12
+energy_range = 4

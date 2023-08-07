@@ -1,0 +1,1 @@
+nvidiaProfileInspector.exe mmconsole.nip

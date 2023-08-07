@@ -29,8 +29,8 @@ contains additional data to complement the main InVADo repository
 - CMake (tested 3.26) https://cmake.org/download/
 - Visual Studio (tested version of 2022) https://visualstudio.microsoft.com/de/vs/
 - node.js v16 (tested 16.20.1) https://nodejs.org/en/blog/release/v16.20.0
-- Microsoft MPI (https://www.microsoft.com/en-us/download/details.aspx?id=105289)
-- Python 3.10 (https://www.python.org/downloads/release/python-3100/)
+- Microsoft MPI (install both msmpisdk.msi; msmpisetup.exe) https://www.microsoft.com/en-us/download/details.aspx?id=105289
+- Python 3.10 https://www.python.org/downloads/release/python-3100/
   #### (during installation following additional options must be checked [x])
   - [x] Add to Path
   - use --> Customize Installation

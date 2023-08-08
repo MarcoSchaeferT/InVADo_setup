@@ -31,7 +31,7 @@ contains additional data to complement the main InVADo repository
 - node.js v16 (tested 16.20.1) https://nodejs.org/en/blog/release/v16.20.0
 - Microsoft MPI (install both msmpisdk.msi; msmpisetup.exe) https://www.microsoft.com/en-us/download/details.aspx?id=105289
 - Firefox (tested 116.0.1) https://www.mozilla.org/de/firefox/new/
-- Python 3.10 https://www.python.org/downloads/release/python-3100/
+- Python 3.10 (tested 3.10.11) https://www.python.org/downloads/release/python-31011/
 
   #### (during installation following additional options must be checked [x])
 
@@ -50,6 +50,7 @@ contains additional data to complement the main InVADo repository
 - run CMake for MegaMol/InVADo (configure)
   - set visual studio 2022
   - set x64
+    ![](CMake.png)
 - ignore warnings during configure
 - _check/do the following boxes/steps:_
   - [x] ENABLE_MPI
@@ -98,3 +99,7 @@ contains additional data to complement the main InVADo repository
 
 - got to folder **'graphicSettings'**
 - run **setGraphics.cmd** to set a Nvidia profile for InVADo
+
+## Trouble Shooting
+
+- if the build fails with: **can not find \_Py_wfopen()** make sure Python 3.10 is installed and no other python version is set for the PATH variable

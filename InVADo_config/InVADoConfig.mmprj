@@ -6,51 +6,51 @@
 
 Use this command line arguments to start MegaMol
 in Cmd:
-  -p "C:\Projects\02_CONFIGS\dockingConfig.mmprj" -i Project_1 inst
+  -p "C:\Projects\02_CONFIGS\InVADoConfig.mmprj" -i Project_1 inst
 in PowerShell:
-  -p "C:\Projects\02_CONFIGS\dockingConfig.mmprj" -i Project_1 inst
+  -p "C:\Projects\02_CONFIGS\InVADoConfig.mmprj" -i Project_1 inst
 
 -->
 
-	<view name="Project_1">
-		<module class="View3DMouse" name="View3DMouse1" confpos="{X=181,Y=193}">
+	<view name="Project_1" viewmod="GUIView1">
+		<module class="View3DMouse" name="View3DMouse1" confpos="{X=224,Y=193}">
 			<param name="backCol" value="#b4b4b4" />
 			<param name="showBBox" value="False" />
 			<param name="bboxCol" value="#000000" />
 		</module>
-		<module class="LigandModelSelector" name="LigandModelSelector1" confpos="{X=1335,Y=363}" />
-		<module class="PDBLoader" name="PDBLoader1" confpos="{X=1882,Y=336}">
+		<module class="LigandModelSelector" name="LigandModelSelector1" confpos="{X=1378,Y=363}" />
+		<module class="PDBLoader" name="PDBLoader1" confpos="{X=1918,Y=341}">
 			<param name="pdbFilename" value="C:\Projects\01_DATA\InVADo_DATA_results_autoDockTools\7nn9_autoDockTools.pdb" />
 		</module>
-		<module class="MSMSMeshLoader" name="MSMSMeshLoader1" confpos="{X=1171,Y=278}">
+		<module class="MSMSMeshLoader" name="MSMSMeshLoader1" confpos="{X=1214,Y=278}">
 			<param name="MSMS_detail" value="5" />
 			<param name="MSMS_probeRadius" value="1.4" />
 			<param name="color::coloringMode0" value="15" />
 			<param name="color::coloringMode1" value="15" />
 		</module>
-		<module class="ParticlesToDensity" name="ParticlesToDensity1" confpos="{X=1330,Y=36}">
-			<param name="sizex" value="64" />
-			<param name="sizey" value="64" />
-			<param name="sizez" value="64" />
+		<module class="ParticlesToDensity" name="ParticlesToDensity1" confpos="{X=1373,Y=36}">
+			<param name="sizex" value="14" />
+			<param name="sizey" value="14" />
+			<param name="sizez" value="14" />
 			<param name="sigma" value="4" />
 		</module>
-		<module class="MPIVolumeAggregator" name="MPIVolumeAggregator1" confpos="{X=998,Y=35}" />
-		<module class="MoleculeBallifier" name="MoleculeBallifier1" confpos="{X=1683,Y=37}" />
-		<module class="MoleculeCartoonRenderer" name="MoleculeCartoonRenderer1" confpos="{X=769,Y=53}">
+		<module class="MPIVolumeAggregator" name="MPIVolumeAggregator1" confpos="{X=1041,Y=35}" />
+		<module class="MoleculeBallifier" name="MoleculeBallifier1" confpos="{X=1726,Y=37}" />
+		<module class="MoleculeCartoonRenderer" name="MoleculeCartoonRenderer1" confpos="{X=812,Y=53}">
 			<param name="renderingMode" value="2" />
 		</module>
-		<module class="SimpleMoleculeRenderer" name="SimpleMoleculeRenderer1" confpos="{X=547,Y=5}">
+		<module class="SimpleMoleculeRenderer" name="SimpleMoleculeRenderer1" confpos="{X=590,Y=5}">
 			<param name="color::coloringMode0" value="0" />
 			<param name="color::coloringMode1" value="7" />
 			<param name="renderMode" value="1" />
 			<param name="stickRadius" value="0.23" />
 		</module>
-		<module class="SimpleMoleculeRenderer" name="SimpleMoleculeRenderer2" confpos="{X=543,Y=523}">
+		<module class="SimpleMoleculeRenderer" name="SimpleMoleculeRenderer2" confpos="{X=586,Y=523}">
 			<param name="color::coloringMode0" value="0" />
 			<param name="renderMode" value="2" />
 			<param name="stickRadius" value="0.12" />
 		</module>
-		<module class="TransferFunction" name="TransferFunction_interactionForce" confpos="{X=1065,Y=366}">
+		<module class="TransferFunction" name="TransferFunction_interactionForce" confpos="{X=1108,Y=366}">
 			<param name="TransferFunction" value="{
   &quot;Interpolation&quot;: &quot;LINEAR&quot;,
   &quot;Nodes&quot;: [
@@ -78,15 +78,15 @@ in PowerShell:
   ]
 }" />
 		</module>
-		<module class="Mux4Renderer3D" name="Mux4Renderer3D1" confpos="{X=392,Y=146}">
+		<module class="Mux4Renderer3D" name="Mux4Renderer3D1" confpos="{X=435,Y=146}">
 			<param name="renderer2active" value="False" />
 		</module>
-		<module class="MultiPDBQTLoader" name="MultiPDBQTLoader1" confpos="{X=1641,Y=226}">
+		<module class="MultiPDBQTLoader" name="MultiPDBQTLoader1" confpos="{X=1684,Y=226}">
 			<param name="pdbqtListFilename" value="C:\Projects\01_DATA\InVADo_DATA_results_autoDockTools\results_list.txt" />
 			<param name="DBSCAN::minPts" value="30" />
 			<param name="DBSCAN::minBindEnergy" value="-3.7" />
 		</module>
-		<module class="TransferFunction" name="TransferFunction_clusterSpheres" confpos="{X=1065,Y=427}">
+		<module class="TransferFunction" name="TransferFunction_clusterSpheres" confpos="{X=1108,Y=427}">
 			<param name="TransferFunction" value="{
   &quot;Interpolation&quot;: &quot;LINEAR&quot;,
   &quot;Nodes&quot;: [
@@ -114,7 +114,7 @@ in PowerShell:
   ]
 }" />
 		</module>
-		<module class="TransferFunction" name="TransferFunction_functGroups" confpos="{X=1065,Y=488}">
+		<module class="TransferFunction" name="TransferFunction_functGroups" confpos="{X=1108,Y=488}">
 			<param name="TransferFunction" value="{
   &quot;Interpolation&quot;: &quot;LINEAR&quot;,
   &quot;Nodes&quot;: [
@@ -142,19 +142,20 @@ in PowerShell:
   ]
 }" />
 		</module>
-		<module class="ClipPlane" name="ClipPlane1" confpos="{X=1065,Y=549}">
+		<module class="ClipPlane" name="ClipPlane1" confpos="{X=1108,Y=549}">
 			<param name="point" value="22;0;0" />
 			<param name="dist" value="50" />
 		</module>
-		<module class="ModelClusterRenderer" name="ModelClusterRenderer1" confpos="{X=756,Y=230}">
+		<module class="ModelClusterRenderer" name="ModelClusterRenderer1" confpos="{X=799,Y=230}">
 			<param name="Render Data:: show functional Groups" value="False" />
 			<param name="InterForces->  Surface Coloring::Force" value="6" />
-			<param name="ambient Occlusion::aoSampleFactor" value="3" />
-			<param name="ambient Occlusion::aoSampleDistance" value="6" />
+			<param name="ambient Occlusion::aoSampleFactor" value="2.5" />
+			<param name="ambient Occlusion::aoSampleDistance" value="0.8" />
 			<param name="ambient Occlusion::aoIntensityMin" value="0.65" />
 			<param name="ambient Occlusion::aoIntensityMax" value="1" />
 		</module>
-		<module class="SocketCommunicationManager" name="SocketCommunicationManager1" confpos="{X=1412,Y=470}" />
+		<module class="SocketCommunicationManager" name="SocketCommunicationManager1" confpos="{X=1455,Y=470}" />
+		<module class="GUIView" name="GUIView1" confpos="{X=161,Y=90}" />
 		<call class="MolecularDataCall" from="MSMSMeshLoader1::moldata" to="PDBLoader1::dataout" />
 		<call class="VolumetricDataCall" from="MPIVolumeAggregator1::indata" to="ParticlesToDensity1::outData" />
 		<call class="MultiParticleDataCall" from="ParticlesToDensity1::inData" to="MoleculeBallifier1::outData" />
@@ -179,5 +180,6 @@ in PowerShell:
 		<call class="MouseInputCall" from="View3DMouse1::mouse" to="ModelClusterRenderer1::getMouseData" />
 		<call class="CallRender3D" from="Mux4Renderer3D1::renderer1" to="SimpleMoleculeRenderer1::rendering" />
 		<call class="LigandModelCall" from="SocketCommunicationManager1::getData" to="MultiPDBQTLoader1::LigandModelCall_out" />
+		<call class="CallRenderView" from="GUIView1::renderview" to="View3DMouse1::render" />
 	</view>
 </MegaMol>

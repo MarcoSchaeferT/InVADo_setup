@@ -6,9 +6,9 @@
 
 Use this command line arguments to start MegaMol
 in Cmd:
-  -p "C:\Projects\02_CONFIGS\InVADoConfig.mmprj" -i Project_1 inst
+  -p "C:\Users\MarcoSchaefer\Projects\other\InVADo_setup\InVADo_config\InVADoConfig.mmprj" -i Project_1 inst
 in PowerShell:
-  -p "C:\Projects\02_CONFIGS\InVADoConfig.mmprj" -i Project_1 inst
+  -p "C:\Users\MarcoSchaefer\Projects\other\InVADo_setup\InVADo_config\InVADoConfig.mmprj" -i Project_1 inst
 
 -->
 
@@ -20,7 +20,7 @@ in PowerShell:
 		</module>
 		<module class="LigandModelSelector" name="LigandModelSelector1" confpos="{X=1378,Y=363}" />
 		<module class="PDBLoader" name="PDBLoader1" confpos="{X=1918,Y=341}">
-			<param name="pdbFilename" value="C:\Projects\01_DATA\InVADo_DATA_results_autoDockTools\7nn9_autoDockTools.pdb" />
+			<param name="pdbFilename" value="C:\Users\MarcoSchaefer\Projects\01_DATA\InVADo_DATA_results_autoDockTools\7nn9_autoDockTools.pdb" />
 		</module>
 		<module class="MSMSMeshLoader" name="MSMSMeshLoader1" confpos="{X=1214,Y=278}">
 			<param name="MSMS_detail" value="5" />
@@ -29,10 +29,10 @@ in PowerShell:
 			<param name="color::coloringMode1" value="15" />
 		</module>
 		<module class="ParticlesToDensity" name="ParticlesToDensity1" confpos="{X=1373,Y=36}">
-			<param name="sizex" value="14" />
-			<param name="sizey" value="14" />
-			<param name="sizez" value="14" />
-			<param name="sigma" value="4" />
+			<param name="sizex" value="10" />
+			<param name="sizey" value="10" />
+			<param name="sizez" value="10" />
+			<param name="sigma" value="3.5" />
 		</module>
 		<module class="MPIVolumeAggregator" name="MPIVolumeAggregator1" confpos="{X=1041,Y=35}" />
 		<module class="MoleculeBallifier" name="MoleculeBallifier1" confpos="{X=1726,Y=37}" />
@@ -82,7 +82,7 @@ in PowerShell:
 			<param name="renderer2active" value="False" />
 		</module>
 		<module class="MultiPDBQTLoader" name="MultiPDBQTLoader1" confpos="{X=1684,Y=226}">
-			<param name="pdbqtListFilename" value="C:\Projects\01_DATA\InVADo_DATA_results_autoDockTools\results_list.txt" />
+			<param name="pdbqtListFilename" value="C:\Users\MarcoSchaefer\Projects\01_DATA\InVADo_DATA_results_autoDockTools\results_list.txt" />
 			<param name="DBSCAN::minPts" value="30" />
 			<param name="DBSCAN::minBindEnergy" value="-3.7" />
 		</module>
@@ -146,12 +146,12 @@ in PowerShell:
 			<param name="point" value="22;0;0" />
 			<param name="dist" value="50" />
 		</module>
-		<module class="ModelClusterRenderer" name="ModelClusterRenderer1" confpos="{X=799,Y=230}">
+		<module class="ModelClusterRenderer" name="ModelClusterRenderer1" confpos="{X=798,Y=229}">
 			<param name="Render Data:: show functional Groups" value="False" />
 			<param name="InterForces->  Surface Coloring::Force" value="6" />
-			<param name="ambient Occlusion::aoSampleFactor" value="2.5" />
-			<param name="ambient Occlusion::aoSampleDistance" value="0.8" />
-			<param name="ambient Occlusion::aoIntensityMin" value="0.65" />
+			<param name="ambient Occlusion::aoSampleFactor" value="2.25" />
+			<param name="ambient Occlusion::aoSampleDistance" value="0.75" />
+			<param name="ambient Occlusion::aoIntensityMin" value="0.5" />
 			<param name="ambient Occlusion::aoIntensityMax" value="1" />
 		</module>
 		<module class="SocketCommunicationManager" name="SocketCommunicationManager1" confpos="{X=1455,Y=470}" />

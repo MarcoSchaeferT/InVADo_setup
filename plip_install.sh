@@ -37,4 +37,5 @@ echo "$TMP3"
 cd $TMP3
 sudo python3 setup.py installs
 sudo pip install plip
+cd ..
 

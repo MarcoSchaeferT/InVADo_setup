@@ -30,7 +30,7 @@ contains additional data to complement the main InVADo repository
 - operating system: windows 10 or 11
 - GPU: NVIDIA
 - CUDA (tested CUDA 11.6) https://developer.nvidia.com/cuda-11-6-0-download-archive
-- linux subsystem (tested 22.04 LTS) https://learn.microsoft.com/en-us/windows/wsl/install
+- Linux subsystem (tested 22.04 LTS) https://learn.microsoft.com/en-us/windows/wsl/install
 - CMake (tested 3.26) https://cmake.org/download/
 - Visual Studio (tested version of 2022) https://visualstudio.microsoft.com/de/vs/
 - node.js v16 (tested 16.20.1) https://nodejs.org/en/blog/release/v16.20.0
@@ -47,7 +47,7 @@ contains additional data to complement the main InVADo repository
   - [x] Download debugging symbols
   - [x] Download debug binaries
 
-- PLIP running in Linux subsystem must be installed via the script: run_plip_install.cmd
+- PLIP running in the Linux subsystem must be installed via the script: run_plip_install.cmd
 - the rest of the needed programs are downloaded via CMake
 
 ## Building InVADo:
@@ -56,7 +56,7 @@ contains additional data to complement the main InVADo repository
   - set visual studio 2022
   - set x64
     ![](CMake.png)
-- ignore warnings during 'configure' process
+- ignore warnings during the 'configure' process
 - _check/do the following boxes/steps:_
   - [x] ENABLE_MPI
   - set 'MPI_GUESS_LIBRARY_NAME' to 'MSMPI'
@@ -69,7 +69,7 @@ contains additional data to complement the main InVADo repository
   - (may need to install .NET Framework 4.8.1 SDK)
 - set the 'INSTALL' target of 'CMakePredefinedTargets' as the start project
 - build and install it as "RELEASE" not "DEBUG"
-- "DEBUG" is possible as well, but if the docking data set is not already preprocessed by InVADo as RELEASE version it will fail to start as DEBUG version
+- "DEBUG" is possible as well, but if the docking data set is not already preprocessed by InVADo as a RELEASE version it will fail to start as a DEBUG version
 - the docking data set will be preprocessed one time with the first start of InVADo as RELEASE version
 - for easier development set 'INSTALL' target settings as follows:
   ![](visual_studio_config.png)
@@ -85,8 +85,8 @@ contains additional data to complement the main InVADo repository
 ## Run InVADo:
 
 - InVADo can be started with **mmconsole.exe**
-- stored after building in **"build/install/bin/"**
-- the InVADo config **#InVADoConfig.mmprj#** file is in the folder **'InVADo_config'**
+- **mmconsole.exe** is stored after building in **"build/install/bin/"**
+- the InVADo config **InVADoConfig.mmprj** file is located in the folder **'InVADo_config'**
 - the InVADo config can be adjusted with the configurator **MegaMolConf.exe**
   - Module _MultiPDBQTLoader1_ Parameter: _pdbqtListFilename_: must be set to your path of a PDBQT file list (\*.txt)
   - Module _PDBLoader1_: Parameter: _pdbFilename_: must be set to your path of a protein file (\*.pdb)
@@ -100,11 +100,11 @@ contains additional data to complement the main InVADo repository
 - build the web app: run _'.\plugins\prolint\server\build_app.cmd'_
 - start the web app: run _'.\plugins\prolint\server\run_app.cmd'_
 
-## optional: improve rendering quaility
+## optional: improve rendering quality
 
 - got to folder **'graphicSettings'**
 - run **setGraphics.cmd** to set an Nvidia profile for InVADo
 
 ## Trouble Shooting
 
-- if the build fails with: **can not find \_Py_wfopen()** make sure Python 3.10 is installed and no other Python version is set for the windows PATH variable
+- if the build fails with: **can not find \_Py_wfopen()** make sure Python 3.10 is installed and no other Python version is set for the Windows PATH variable

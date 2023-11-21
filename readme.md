@@ -1,6 +1,6 @@
 # InVADo: Interactive Visual Analysis of Molecular Docking Data
 
-![](InVADo.png)
+<img src="InVADo.png" width="128" height="128" />
 
 # InVADo_setup - Repository
 
@@ -9,10 +9,7 @@ contains additional data to complement the main InVADo repository
 - figures of functional groups (needed for web dashboard)
 - small precalculated data set (for development or when running the web dashboard without InVADo desktop)
 - InVADo config file
-- graphics setting file
-<!-- - the **Checkmol/Matchmol** program for determining functional groups (GNU General Public License)
-- **geckodriver** for controling the web-dashboard (Mozilla Public License)
-- **nvidiaProfileInspector** used for optional setting of better graphics (MIT license)-->
+- graphics settings file
 
 ### main repository of InVADo: https://github.com/MarcoSchaeferT/megamol-prolint-InVADo
 

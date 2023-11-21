@@ -7,16 +7,21 @@
 contains additional data to complement the main InVADo repository
 
 - figures of functional groups (needed for web dashboard)
-- small precalculated data set (for development or when running web dashboard without InVADo desktop)
+- small precalculated data set (for development or when running the web dashboard without InVADo desktop)
 - InVADo config file
-- graphic setting file
+- graphics setting file
 <!-- - the **Checkmol/Matchmol** program for determining functional groups (GNU General Public License)
 - **geckodriver** for controling the web-dashboard (Mozilla Public License)
 - **nvidiaProfileInspector** used for optional setting of better graphics (MIT license)-->
 
 ### main repository of InVADo: https://github.com/MarcoSchaeferT/megamol-prolint-InVADo
 
-### after CMake: content of this repo + additional files can be found in _\plugins\prolint\InVADo_setup_
+###
+
+- running CMake to prepare InVADo for building
+- InVADo is available under the repository link above
+- running CMake will automatically download the additional content of this repository
+- additional content is saved to: _NAME_OF_REPOSITORY\plugins\prolint\InVADo_setup_
 
 (the following mentioned references refer to this path)
 
@@ -33,7 +38,7 @@ contains additional data to complement the main InVADo repository
 - Firefox (tested 116.0.1) https://www.mozilla.org/de/firefox/new/
 - Python 3.10 (tested 3.10.11) https://www.python.org/downloads/release/python-31011/
 
-  #### (during installation following additional options must be checked [x])
+  #### (during Python installation following additional options must be checked [x])
 
   - [x] Add to Path
   - use --> Customize Installation
@@ -43,7 +48,7 @@ contains additional data to complement the main InVADo repository
   - [x] Download debug binaries
 
 - PLIP running in Linux subsystem must be installed via the script: run_plip_install.cmd
-- the rest of the needed programs is downloaded via CMake
+- the rest of the needed programs are downloaded via CMake
 
 ## Building InVADo:
 
@@ -51,7 +56,7 @@ contains additional data to complement the main InVADo repository
   - set visual studio 2022
   - set x64
     ![](CMake.png)
-- ignore warnings during configure
+- ignore warnings during 'configure' process
 - _check/do the following boxes/steps:_
   - [x] ENABLE_MPI
   - set 'MPI_GUESS_LIBRARY_NAME' to 'MSMPI'
@@ -62,7 +67,7 @@ contains additional data to complement the main InVADo repository
   - generate
   - open project
   - (may need to install .NET Framework 4.8.1 SDK)
-- set the 'INSTALL' target of 'CMakePredefinedTargets' as start project
+- set the 'INSTALL' target of 'CMakePredefinedTargets' as the start project
 - build and install it as "RELEASE" not "DEBUG"
 - "DEBUG" is possible as well, but if the docking data set is not already preprocessed by InVADo as RELEASE version it will fail to start as DEBUG version
 - the docking data set will be preprocessed one time with the first start of InVADo as RELEASE version
@@ -80,26 +85,26 @@ contains additional data to complement the main InVADo repository
 ## Run InVADo:
 
 - InVADo can be started with **mmconsole.exe**
-- stored after build in **"build/install/bin/"**
+- stored after building in **"build/install/bin/"**
 - the InVADo config **#InVADoConfig.mmprj#** file is in the folder **'InVADo_config'**
-- it can be adjusted with the configurator **MegaMolConf.exe**
+- the InVADo config can be adjusted with the configurator **MegaMolConf.exe**
   - Module _MultiPDBQTLoader1_ Parameter: _pdbqtListFilename_: must be set to your path of a PDBQT file list (\*.txt)
-  - Module _PDBLoader1_: Paramenter: _pdbFilename_: must be set to your path of a protein file (\*.pdb)
+  - Module _PDBLoader1_: Parameter: _pdbFilename_: must be set to your path of a protein file (\*.pdb)
     ![](config.png)
 - example command for execution (program + config file): C:\Projects\InVADo\build\install\bin\mmconsole.exe -p "C:\Projects\02_CONFIGS\InVADoConfig.mmprj" -i Project_1 inst
 
 ## Starting only the Web Dashboard
 
-- there is the possibility to run only the web-part of InVADo without the 3D visualization
-- it will use the in this provided testData
+- there is the possibility to run only the web part of InVADo without the 3D visualization
+- it will use the provided test data set
 - build the web app: run _'.\plugins\prolint\server\build_app.cmd'_
 - start the web app: run _'.\plugins\prolint\server\run_app.cmd'_
 
 ## optional: improve rendering quaility
 
 - got to folder **'graphicSettings'**
-- run **setGraphics.cmd** to set a Nvidia profile for InVADo
+- run **setGraphics.cmd** to set an Nvidia profile for InVADo
 
 ## Trouble Shooting
 
-- if the build fails with: **can not find \_Py_wfopen()** make sure Python 3.10 is installed and no other python version is set for the PATH variable
+- if the build fails with: **can not find \_Py_wfopen()** make sure Python 3.10 is installed and no other Python version is set for the windows PATH variable

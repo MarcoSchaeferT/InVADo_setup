@@ -1,2 +1,2 @@
-bash -c " sh ./auto.sh"
+bash auto.sh
 pause()

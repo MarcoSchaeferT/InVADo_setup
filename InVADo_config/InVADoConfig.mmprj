@@ -20,7 +20,7 @@ in PowerShell:
 		</module>
 		<module class="LigandModelSelector" name="LigandModelSelector1" confpos="{X=1378,Y=363}" />
 		<module class="PDBLoader" name="PDBLoader1" confpos="{X=1918,Y=341}">
-			<param name="pdbFilename" value="C:\Users\MarcoSchaefer\Projects\01_DATA\InVADo_DATA_results_autoDockTools\7nn9_autoDockTools.pdb" />
+			<param name="pdbFilename" value="C:\Users\MarcoSchaefer\Projects\other\InVADo_setup\prepare_docking_data_scripts\7nn9_autoDockTools.pdbqt" />
 		</module>
 		<module class="MSMSMeshLoader" name="MSMSMeshLoader1" confpos="{X=1214,Y=278}">
 			<param name="MSMS_detail" value="5" />
@@ -82,7 +82,7 @@ in PowerShell:
 			<param name="renderer2active" value="False" />
 		</module>
 		<module class="MultiPDBQTLoader" name="MultiPDBQTLoader1" confpos="{X=1684,Y=226}">
-			<param name="pdbqtListFilename" value="C:\Users\MarcoSchaefer\Projects\01_DATA\InVADo_DATA_results_autoDockTools\results_list.txt" />
+			<param name="pdbqtListFilename" value="C:\Users\MarcoSchaefer\Projects\other\InVADo_setup\prepare_docking_data_scripts\results\results_list.txt" />
 			<param name="DBSCAN::minPts" value="30" />
 			<param name="DBSCAN::minBindEnergy" value="-3.7" />
 		</module>

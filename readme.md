@@ -86,6 +86,8 @@ contains additional data to complement the main InVADo repository
 
 ## Run InVADo:
 
+![](InVADO_teaser.png)
+
 - InVADo can be started with **mmconsole.exe**
 - **mmconsole.exe** is stored after building in **"build/install/bin/"**
 - the InVADo config **InVADoConfig.mmprj** file is located in the folder **'./InVADo_config'**

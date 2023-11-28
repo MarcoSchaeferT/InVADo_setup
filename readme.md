@@ -75,18 +75,25 @@ contains additional data to complement the main InVADo repository
 
 - the folder **'prepare_docking_data_scripts'** contains a pipeline
 - this is an exemplary, simple pipeline for processing a molecular docking
+- a small example data set is included
+  - _./data/AAABMN.xaa.pdbqt_ (includes the ligands)
+  - _./7nn9_autoDockTools.pdbqt_ (is the target protein)
+- running the script "run_full_automated_docking.cmd" automatically performs a molecular docking of the data above
+- the docked data is then stored in the folder "./results"
 - the example ligands are from the ZINC database: https://zinc15.docking.org/
 - the docking tool is AutoDock Vina: https://vina.scripps.edu/
-- ligands should follow the ZINC naming scheme
+- if own ligands are used they should follow the ZINC naming scheme
 
 ## Run InVADo:
 
 - InVADo can be started with **mmconsole.exe**
 - **mmconsole.exe** is stored after building in **"build/install/bin/"**
-- the InVADo config **InVADoConfig.mmprj** file is located in the folder **'InVADo_config'**
-- the InVADo config can be adjusted with the configurator **MegaMolConf.exe**
-  - Module _MultiPDBQTLoader1_ Parameter: _pdbqtListFilename_: must be set to your path of a PDBQT file list (\*.txt)
+- the InVADo config **InVADoConfig.mmprj** file is located in the folder **'./InVADo_config'**
+- the InVADo config can be adjusted with the configurator **./InVADo_config/MegaMolConf.exe**
+  - Module _MultiPDBQTLoader1_ Parameter: _pdbqtListFilename_: must be set to your path of a ligand PDBQT file list (\*.txt)
+    #### [e.g.: *Path_to_InVADO_setup_repo/results/results_list.txt*]
   - Module _PDBLoader1_: Parameter: _pdbFilename_: must be set to your path of a protein file (\*.pdb)
+    #### [e.g.: *Path_to_InVADO_setup_repo/7nn9_autoDockTools.pdbqt*]
     ![](config.png)
 - example command for execution (program + config file): C:\Projects\InVADo\build\install\bin\mmconsole.exe -p "C:\Projects\02_CONFIGS\InVADoConfig.mmprj" -i Project_1 inst
 

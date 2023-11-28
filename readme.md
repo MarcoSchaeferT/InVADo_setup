@@ -95,7 +95,9 @@ contains additional data to complement the main InVADo repository
   - Module _PDBLoader1_: Parameter: _pdbFilename_: must be set to your path of a protein file (\*.pdb)
     #### [e.g.: *Path_to_InVADO_setup_repo/7nn9_autoDockTools.pdbqt*]
     ![](config.png)
-- example command for execution (program + config file): C:\Projects\InVADo\build\install\bin\mmconsole.exe -p "C:\Projects\02_CONFIGS\InVADoConfig.mmprj" -i Project_1 inst
+- example command for execution (program + config file): _C:\Projects\InVADo\build\install\bin\mmconsole.exe -p "C:\Projects\02_CONFIGS\InVADoConfig.mmprj" -i Project_1 inst_
+- the first start can take a while because InVADo preprocesses the data (loading bars in the cmd window will indicate the progress)
+- the processed data will be stored in [e.g.: *\prepare_docking_data_scripts\results\InVADo_tmpFiles*]
 
 ## Starting only the Web Dashboard
 

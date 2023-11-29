@@ -7,7 +7,7 @@
 contains additional data to complement the main InVADo repository
 
 - figures of functional groups (needed for web dashboard)
-- small precalculated data set (for development or when running the web dashboard without InVADo desktop)
+- small precalculated data set (for web part development or when running the web dashboard without InVADo desktop)
 - InVADo config file
 - graphics settings file
 
@@ -15,10 +15,10 @@ contains additional data to complement the main InVADo repository
 
 ###
 
-- running CMake to prepare InVADo for building
+- run CMake to prepare InVADo for building
 - InVADo is available under the repository link above
 - running CMake will automatically download the additional content of this repository
-- additional content is saved to: _NAME_OF_REPOSITORY\plugins\prolint\InVADo_setup_
+- additional content is saved to: **NAME_OF_REPOSITORY\plugins\prolint\InVADo_setup**
 
 (the following mentioned references refer to this path)
 
@@ -44,7 +44,7 @@ contains additional data to complement the main InVADo repository
   - [x] Download debugging symbols
   - [x] Download debug binaries
 
-- PLIP running in the Linux subsystem must be installed via the script: run_plip_install.cmd
+- PLIP running in the Linux subsystem must be installed via the script: **NAME_OF_REPOSITORY\plugins\prolint\InVADo_setup\run_plip_install.cmd**
 - the rest of the needed programs are downloaded via CMake
 
 ## Building InVADo:
@@ -73,13 +73,15 @@ contains additional data to complement the main InVADo repository
 
 ## Create a New Data Set
 
+PATH = \_NAME_OF_REPOSITORY\plugins\prolint\InVADo_setup\prepare_docking_data_scripts
+
 - the folder **'prepare_docking_data_scripts'** contains a pipeline
 - this is an exemplary, simple pipeline for processing a molecular docking
 - a small example data set is included
-  - _./data/AAABMN.xaa.pdbqt_ (includes the ligands)
-  - _./7nn9_autoDockTools.pdbqt_ (is the target protein)
-- running the script "run_full_automated_docking.cmd" automatically performs a molecular docking of the data above
-- the docked data is then stored in the folder "./results"
+  - **PATH/data/AAABMN.xaa.pdbqt** (includes the ligands)
+  - **PATH/7nn9_autoDockTools.pdbqt** (is the target protein)
+- running the script **PATH\run_full_automated_docking.cmd** automatically performs a molecular docking of the data above
+- the docked data is then stored in the folder **PATH/results**
 - the example ligands are from the ZINC database: https://zinc15.docking.org/
 - the docking tool is AutoDock Vina: https://vina.scripps.edu/
 - if own ligands are used they should follow the ZINC naming scheme
@@ -87,30 +89,35 @@ contains additional data to complement the main InVADo repository
 ## Run InVADo:
 
 ![](InVADO_teaser.png)
+PATH = \_NAME_OF_REPOSITORY\plugins\prolint\InVADo_setup\
 
 - InVADo can be started with **mmconsole.exe**
-- **mmconsole.exe** is stored after building in **"build/install/bin/"**
-- the InVADo config **InVADoConfig.mmprj** file is located in the folder **'./InVADo_config'**
-- the InVADo config can be adjusted with the configurator **./InVADo_config/MegaMolConf.exe**
+- **mmconsole.exe** is stored after building in **"\_NAME_OF_REPOSITORY/build/install/bin/"**
+- the InVADo config **InVADoConfig.mmprj** file is located in the folder **'PATH/InVADo_config'**
+- the InVADo config can be adjusted with the configurator **PATH/InVADo_config/MegaMolConf.exe**
   - Module _MultiPDBQTLoader1_ Parameter: _pdbqtListFilename_: must be set to your path of a ligand PDBQT file list (\*.txt)
-    #### [e.g.: *Path_to_InVADO_setup_repo/results/results_list.txt*]
+    #### [e.g.:PATH\prepare_docking_data_scripts\results\results_list.txt*]
   - Module _PDBLoader1_: Parameter: _pdbFilename_: must be set to your path of a protein file (\*.pdb)
-    #### [e.g.: *Path_to_InVADO_setup_repo/7nn9_autoDockTools.pdbqt*]
+    #### [e.g.: *PATH\prepare_docking_data_scripts/7nn9_autoDockTools.pdbqt*]
     ![](config.png)
-- example command for execution (program + config file): _C:\Projects\InVADo\build\install\bin\mmconsole.exe -p "C:\Projects\02_CONFIGS\InVADoConfig.mmprj" -i Project_1 inst_
+- example command for execution (program + config file): _C:\Projects\InVADo\build\install\bin\mmconsole.exe -p "C:\PATH\InVADo_config\InVADoConfig.mmprj" -i Project_1 inst_
 - the first start can take a while because InVADo preprocesses the data (loading bars in the cmd window will indicate the progress)
-- the processed data will be stored in [e.g.: *\prepare_docking_data_scripts\results\InVADo_tmpFiles*]
+- the processed data will be stored in [e.g.: *PATH\prepare_docking_data_scripts\results\InVADo_tmpFiles*]
 
 ## Starting only the Web Dashboard
 
+PATH = \_NAME_OF_REPOSITORY\plugins\prolint\server\
+
 - there is the possibility to run only the web part of InVADo without the 3D visualization
 - it will use the provided test data set
-- build the web app: run _'.\plugins\prolint\server\build_app.cmd'_
-- start the web app: run _'.\plugins\prolint\server\run_app.cmd'_
+- build the web app: run _'PATH\build_app.cmd'_
+- start the web app: run _'PATH\run_app.cmd'_
 
 ## optional: improve rendering quality
 
-- got to folder **'graphicSettings'**
+PATH = \_NAME_OF_REPOSITORY\plugins\prolint\InVADo_setup\
+
+- got to folder **'graphicSettings'** located in PATH
 - run **setGraphics.cmd** to set an Nvidia profile for InVADo
 
 ## Trouble Shooting

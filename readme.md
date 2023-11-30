@@ -1,17 +1,6 @@
-<table>
-<tbody>
-  <tr>
-    <td style="width: 80px; height: 80px"><img style="align: center;" src="InVADo.png" width="128" height="128" /> </td>
-    <td> <a style="text-align: center;" href="https://ieeexplore.ieee.org/document/10334517">
-  <h1>InVADo: Interactive Visual Analysis of Molecular Docking Data</h1>
-</a></td>
-  </tr>
-  </tbody>
-</table>
-
-![](InVADO_teaser.png)
-
-#### doi: [10.1109/TVCG.2023.3337642](https://ieeexplore.ieee.org/document/10334517)
+ <h1 align="center">InVADo: Interactive Visual Analysis of Molecular Docking Data</h1>
+<p align="center"><img style="align: center;" src="InVADo.png" width="128" height="128" /></p>
+<p align="center">doi:<a href="https://ieeexplore.ieee.org/document/10334517"> <b>10.1109/TVCG.2023.3337642</b></a></p>
 
 # InVADo_setup - Repository
 
@@ -26,10 +15,10 @@ contains additional data to complement the main InVADo repository
 
 ###
 
-- run CMake to prepare InVADo for building
 - InVADo is available under the repository link above
-- running CMake will automatically download the additional content of this repository
-- additional content is saved to: **NAME_OF_REPOSITORY\plugins\prolint\InVADo_setup**
+- download the repo and run CMake to prepare InVADo for building
+- running CMake will download the additional content of this repository
+- additional content is automatically saved to: **NAME_OF_REPOSITORY\plugins\prolint\InVADo_setup**
 
 (the following mentioned references refer to this path)
 
@@ -38,7 +27,8 @@ contains additional data to complement the main InVADo repository
 - operating system: windows 10 or 11
 - GPU: NVIDIA
 - CUDA (tested CUDA 11.6) https://developer.nvidia.com/cuda-11-6-0-download-archive
-- Linux subsystem (tested 22.04 LTS) https://learn.microsoft.com/en-us/windows/wsl/install
+- Windows Subsystem for Linux (WSL) with Ubuntu https://learn.microsoft.com/en-us/windows/wsl/install
+  - (tested Ubuntu 22.04 LTS) https://www.microsoft.com/store/productId/9PN20MSR04DW?ocid=pdpshare
 - CMake (tested 3.26) https://cmake.org/download/
 - Visual Studio (tested version of 2022) https://visualstudio.microsoft.com/de/vs/
 - node.js v16 (tested 16.20.1) https://nodejs.org/en/blog/release/v16.20.0
@@ -55,7 +45,7 @@ contains additional data to complement the main InVADo repository
   - [x] Download debugging symbols
   - [x] Download debug binaries
 
-- PLIP running in the Linux subsystem must be installed via the script: **NAME_OF_REPOSITORY\plugins\prolint\InVADo_setup\run_plip_install.cmd**
+- PLIP runs in the [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install) that must be installed via the script: **NAME_OF_REPOSITORY\plugins\prolint\InVADo_setup\run_plip_install.cmd**
 - the rest of the needed programs are downloaded via CMake
 
 ## Building InVADo:

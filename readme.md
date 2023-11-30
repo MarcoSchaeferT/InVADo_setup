@@ -1,6 +1,17 @@
-# InVADo: Interactive Visual Analysis of Molecular Docking Data
+<table>
+<tbody>
+  <tr>
+    <td style="width: 80px; height: 80px"><img style="align: center;" src="InVADo.png" width="128" height="128" /> </td>
+    <td> <a style="text-align: center;" href="https://ieeexplore.ieee.org/document/10334517">
+  <h1>InVADo: Interactive Visual Analysis of Molecular Docking Data</h1>
+</a></td>
+  </tr>
+  </tbody>
+</table>
 
-<img src="InVADo.png" width="128" height="128" />
+![](InVADO_teaser.png)
+
+#### doi: [10.1109/TVCG.2023.3337642](https://ieeexplore.ieee.org/document/10334517)
 
 # InVADo_setup - Repository
 

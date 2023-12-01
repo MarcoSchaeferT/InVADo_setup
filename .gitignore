@@ -1,3 +1,6 @@
 prepared_data
 results
 tmp_plipInstall
+*.bak
+vina
+vina_split

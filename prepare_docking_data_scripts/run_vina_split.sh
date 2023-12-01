@@ -17,7 +17,7 @@ for f in *pdbqt; do
 	b=`basename $f .pdbqt`
 
 	echo Processing ligand $b
-	vina_split --input $f
+	../vina_split --input $f
 
 	echo cleaning up...folder $b --- file $f
 	rm $f

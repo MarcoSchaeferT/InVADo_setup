@@ -147,6 +147,7 @@ in PowerShell:
 			<param name="dist" value="50" />
 		</module>
 		<module class="ModelClusterRenderer" name="ModelClusterRenderer1" confpos="{X=798,Y=229}">
+			<param name="InterForces-> Sticks ::hydrogenCones" value="False" />
 			<param name="Render Data:: show functional Groups" value="False" />
 			<param name="InterForces->  Surface Coloring::Force" value="6" />
 			<param name="ambient Occlusion::aoSampleFactor" value="2.25" />

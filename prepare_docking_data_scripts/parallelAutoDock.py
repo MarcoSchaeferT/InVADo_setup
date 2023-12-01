@@ -106,6 +106,8 @@ def getPDBIDs(PDBIDs, databasesPath):
 def run_docking(i, ToDo_numberOfCalculation):
     currentNumberOfCalcs.append(0)
     cnt = 0
+    pcwd = os.getcwd() 
+    vinaPath = pcwd+"/vina"
     basename = PDBIDs[i].split(".pdbqt")[0]
     checkfile = "./" + basename + "/" + basename + "_res.pdbqt"
     if os.path.isfile(checkfile) != True:
@@ -113,7 +115,7 @@ def run_docking(i, ToDo_numberOfCalculation):
 
         cmd = subprocess.Popen(
             [
-                "vina",
+                vinaPath,
                 "--config",
                 "./conf.txt",
                 "--ligand",

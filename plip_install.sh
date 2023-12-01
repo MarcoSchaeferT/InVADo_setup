@@ -35,7 +35,7 @@ TMP3=$TMP/plip
 #TMP3=$TMP/plip-2.2.2
 echo "$TMP3"
 cd $TMP3
-sudo python3 setup.py installs
+sudo python3 setup.py install
 sudo pip install plip
 cd ..
 

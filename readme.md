@@ -51,9 +51,12 @@ contains additional data to complement the main InVADo repository
 ## Building InVADo:
 
 - run CMake for MegaMol/InVADo (configure)
+
   - set visual studio 2022
   - set x64
-    ![](CMake.png)
+
+  <img style="align: center;" src="CMake.png" width="80%" height="80%" />
+
 - ignore warnings during the 'configure' process
 - _check/do the following boxes/steps:_
   - [x] ENABLE_MPI
@@ -69,7 +72,37 @@ contains additional data to complement the main InVADo repository
 - build and install it as "RELEASE" not "DEBUG"
 - "DEBUG" is possible as well, but if the docking data set is not already preprocessed by InVADo as a RELEASE version it will fail to start as a DEBUG version
 - the docking data set will be preprocessed one time with the first start of InVADo as RELEASE version
-- for easier development set 'INSTALL' target settings as follows:
+
+## InVADo Configuration
+
+PATH = \_NAME_OF_REPOSITORY\plugins\prolint\InVADo_setup\
+
+- the InVADo config **InVADoConfig.mmprj** file is located in the folder **'PATH/InVADo_config'**
+- in the InVADo config the path for the ligand list and the target protein file needs to be updated
+- this can be done **manually** in the xml-based file or **graphically** as follows:
+- ### manually:
+  - open **InVADoConfig.mmprj** with an text editor and change the path stored in 'value' to e.g.:
+  - \<param name='pdbqtListFilename' value='C:\PATH\prepare_docking_data_scripts\results\results_list.txt' \/>
+  - \<param name="pdbFilename" value="C:\PATH\prepare_docking_data_scripts\7nn9_autoDockTools.pdbqt" \/>
+- ### graphically:
+- the InVADo config can be adjusted with the configurator **PATH/InVADo_config/MegaMolConf.exe**
+- drag **InVADoConfig.mmprj** and drop it onto **MegaMolConf.exe**
+- an error message will appear -> click ok -> then the following window will be shown:
+  <img style="align: center;" src="configurator_fix.png" width="50%" height="50%" /></p>
+- click on the first fix button and navigate to **\_NAME_OF_REPOSITORY/build/install/bin/** and select **'mmconsole.exe'**
+- then click on the fix button of **'Core and Plugin State'**
+- a new window appears -> there click the button **'Execute'**
+- after the plugin scan is finished click on **'Use this State file'**
+- a window appears where a path for saving the state file is already suggested -> use this suggested path and click **'Save'**
+- close the configurator
+- again drag **InVADoConfig.mmprj** and drop it onto **MegaMolConf.exe** -> the following view will appear:
+  ![](config.png)
+- update the paths for the ligand list and the target protein as follows:
+  - Module _MultiPDBQTLoader1_ Parameter: _pdbqtListFilename_: must be set to your path of a ligand PDBQT file list (\*.txt)
+    #### [e.g.:PATH\prepare_docking_data_scripts\results\results_list.txt*]
+  - Module _PDBLoader1_: Parameter: _pdbFilename_: must be set to your path of a protein file (\*.pdb)
+    #### [e.g.: *PATH\prepare_docking_data_scripts/7nn9_autoDockTools.pdbqt*]
+- for easier development set 'INSTALL' target settings of the Visual Studio project as follows:
   ![](visual_studio_config.png)
 
 ## Create a New Data Set
@@ -94,13 +127,7 @@ PATH = \_NAME_OF_REPOSITORY\plugins\prolint\InVADo_setup\
 
 - InVADo can be started with **mmconsole.exe**
 - **mmconsole.exe** is stored after building in **"\_NAME_OF_REPOSITORY/build/install/bin/"**
-- the InVADo config **InVADoConfig.mmprj** file is located in the folder **'PATH/InVADo_config'**
-- the InVADo config can be adjusted with the configurator **PATH/InVADo_config/MegaMolConf.exe**
-  - Module _MultiPDBQTLoader1_ Parameter: _pdbqtListFilename_: must be set to your path of a ligand PDBQT file list (\*.txt)
-    #### [e.g.:PATH\prepare_docking_data_scripts\results\results_list.txt*]
-  - Module _PDBLoader1_: Parameter: _pdbFilename_: must be set to your path of a protein file (\*.pdb)
-    #### [e.g.: *PATH\prepare_docking_data_scripts/7nn9_autoDockTools.pdbqt*]
-    ![](config.png)
+
 - example command for execution (program + config file): _C:\Projects\InVADo\build\install\bin\mmconsole.exe -p "C:\PATH\InVADo_config\InVADoConfig.mmprj" -i Project_1 inst_
 - the first start can take a while because InVADo preprocesses the data (loading bars in the cmd window will indicate the progress)
 - the processed data will be stored in [e.g.: *PATH\prepare_docking_data_scripts\results\InVADo_tmpFiles*]

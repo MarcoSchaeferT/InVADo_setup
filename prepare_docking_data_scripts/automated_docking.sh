@@ -12,4 +12,4 @@ python3 ./parallelAutoDock.py
 cd results
 python3 ../handleDuplicates.py
 
-echo "all jobs finsihed! "
+echo "all jobs finsihed!"

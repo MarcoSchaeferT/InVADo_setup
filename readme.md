@@ -1,15 +1,11 @@
  <h1 align="center">InVADo: Interactive Visual Analysis of Molecular Docking Data</h1>
 <p align="center"><img style="align: center;" src="InVADo.png" width="128" height="128" /></p>
-<p align="center">doi:<a href="https://ieeexplore.ieee.org/document/10334517"> <b>10.1109/TVCG.2023.3337642</b></a></p>
+<p align="center">paper doi:<a href="https://doi.org/10.1109/TVCG.2023.3337642"> <b>10.1109/TVCG.2023.3337642</b></a></p>
+<p align="center">video doi:<a href="https://doi.org/10.1109/TVCG.2023.3337642/mm1"> <b>10.1109/TVCG.2023.3337642/mm1</b></a></p>
 
 # InVADo_setup - Repository
 
-contains additional data to complement the main InVADo repository
-
-- figures of functional groups (needed for web dashboard)
-- small precalculated data set (for web part development or when running the web dashboard without InVADo desktop)
-- InVADo config file
-- graphics settings file
+contains the **installation instructions** and **additional data** to complement the main InVADo repository
 
 ### main repository of InVADo: https://github.com/MarcoSchaeferT/megamol-prolint-InVADo
 
@@ -20,7 +16,13 @@ contains additional data to complement the main InVADo repository
 - running CMake will download the additional content of this repository
 - additional content is automatically saved to: **NAME_OF_REPOSITORY\plugins\prolint\InVADo_setup**
 
-(the following mentioned references refer to this path)
+additional data includes:
+
+- figures of functional groups (needed for web dashboard)
+- small precalculated data set (for web part development or when running the web dashboard without InVADo desktop)
+- small molecular docking pipeline
+- InVADo config file
+- graphics settings file
 
 ## Requirements Building InVADo:
 

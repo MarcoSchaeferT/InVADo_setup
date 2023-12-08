@@ -12,9 +12,10 @@ contains the **installation instructions** and **additional data** to complement
 ###
 
 - InVADo is available under the repository link above
-- download the repo and run CMake to prepare InVADo for building
+- download the repo and run CMake to prepare InVADo for building<br>
+  (see [Requirements Building InVADo](#requirements-building-invado) and [Building InVADo](#building-invado))
 - running CMake will download the additional content of this repository
-- additional content is automatically saved to: **NAME_OF_REPOSITORY\plugins\prolint\InVADo_setup**
+- additional content is automatically saved to: **InVADo_MAIN_REPO\plugins\prolint\InVADo_setup**
 
 additional data includes:
 
@@ -47,8 +48,8 @@ additional data includes:
   - [x] Download debugging symbols
   - [x] Download debug binaries
 
-- PLIP runs in the [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install) that must be installed via the script: **NAME_OF_REPOSITORY\plugins\prolint\InVADo_setup\run_plip_install.cmd**
-- the rest of the needed programs are downloaded via CMake
+- PLIP runs in the [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install) that must be installed via the script: **InVADo_MAIN_REPO\plugins\prolint\InVADo_setup\run_plip_install.cmd**
+- the rest of the needed programs is downloaded via CMake
 
 ## Building InVADo:
 
@@ -77,13 +78,13 @@ additional data includes:
 
 ## InVADo Configuration
 
-PATH = \_NAME_OF_REPOSITORY\plugins\prolint\InVADo_setup\
+PATH = \_InVADo_MAIN_REPO\plugins\prolint\InVADo_setup\
 
-- the InVADo config **InVADoConfig.mmprj** file is located in the folder **'PATH/InVADo_config'**
-- in the InVADo config the path for the ligand list and the target protein file needs to be updated
-- this can be done **manually** in the xml-based file or **graphically** as follows:
+- the InVADo config file **InVADoConfig.mmprj** is located in the folder **'PATH/InVADo_config'**
+- in the InVADo config file, the path for the **ligand list** and the **target protein file** needs to be updated
+- this can be done **manually** in the XML-based file or **graphically** as follows:
 - ### manually:
-  - open **InVADoConfig.mmprj** with an text editor and change the path stored in 'value' to e.g.:
+  - open **InVADoConfig.mmprj** with a text editor and change the path stored in 'value' to e.g.:
   - \<param name='pdbqtListFilename' value='C:\PATH\prepare_docking_data_scripts\results\results_list.txt' \/>
   - \<param name="pdbFilename" value="C:\PATH\prepare_docking_data_scripts\7nn9_autoDockTools.pdbqt" \/>
 - ### graphically:
@@ -91,7 +92,7 @@ PATH = \_NAME_OF_REPOSITORY\plugins\prolint\InVADo_setup\
 - drag **InVADoConfig.mmprj** and drop it onto **MegaMolConf.exe**
 - an error message will appear -> click ok -> then the following window will be shown:
   <img style="align: center;" src="configurator_fix.png" width="50%" height="50%" /></p>
-- click on the first fix button and navigate to **\_NAME_OF_REPOSITORY/build/install/bin/** and select **'mmconsole.exe'**
+- click on the first fix button and navigate to **\_InVADo_MAIN_REPO/build/install/bin/** and select **'mmconsole.exe'**
 - then click on the fix button of **'Core and Plugin State'**
 - a new window appears -> there click the button **'Execute'**
 - after the plugin scan is finished click on **'Use this State file'**
@@ -109,7 +110,7 @@ PATH = \_NAME_OF_REPOSITORY\plugins\prolint\InVADo_setup\
 
 ## Create a New Data Set
 
-PATH = \_NAME_OF_REPOSITORY\plugins\prolint\InVADo_setup\prepare_docking_data_scripts
+PATH = \_InVADo_MAIN_REPO\plugins\prolint\InVADo_setup\prepare_docking_data_scripts
 
 - the folder **'prepare_docking_data_scripts'** contains a pipeline
 - this is an exemplary, simple pipeline for processing a molecular docking
@@ -125,10 +126,10 @@ PATH = \_NAME_OF_REPOSITORY\plugins\prolint\InVADo_setup\prepare_docking_data_sc
 ## Run InVADo:
 
 ![](InVADO_teaser.png)
-PATH = \_NAME_OF_REPOSITORY\plugins\prolint\InVADo_setup\
+PATH = \_InVADo_MAIN_REPO\plugins\prolint\InVADo_setup\
 
 - InVADo can be started with **mmconsole.exe**
-- **mmconsole.exe** is stored after building in **"\_NAME_OF_REPOSITORY/build/install/bin/"**
+- **mmconsole.exe** is stored after building in **"\_InVADo_MAIN_REPO/build/install/bin/"**
 
 - example command for execution (program + config file): _C:\Projects\InVADo\build\install\bin\mmconsole.exe -p "C:\PATH\InVADo_config\InVADoConfig.mmprj" -i Project_1 inst_
 - the first start can take a while because InVADo preprocesses the data (loading bars in the cmd window will indicate the progress)
@@ -136,7 +137,7 @@ PATH = \_NAME_OF_REPOSITORY\plugins\prolint\InVADo_setup\
 
 ## Starting only the Web Dashboard
 
-PATH = \_NAME_OF_REPOSITORY\plugins\prolint\server\
+PATH = \_InVADo_MAIN_REPO\plugins\prolint\server\
 
 - there is the possibility to run only the web part of InVADo without the 3D visualization
 - it will use the provided test data set
@@ -145,7 +146,7 @@ PATH = \_NAME_OF_REPOSITORY\plugins\prolint\server\
 
 ## optional: improve rendering quality
 
-PATH = \_NAME_OF_REPOSITORY\plugins\prolint\InVADo_setup\
+PATH = \_InVADo_MAIN_REPO\plugins\prolint\InVADo_setup\
 
 - got to folder **'graphicSettings'** located in PATH
 - run **setGraphics.cmd** to set an Nvidia profile for InVADo

@@ -2,6 +2,7 @@
 <p align="center"><img style="align: center;" src="InVADo.png" width="128" height="128" /></p>
 <p align="center">paper doi:<a href="https://doi.org/10.1109/TVCG.2023.3337642"> <b>10.1109/TVCG.2023.3337642</b></a></p>
 <p align="center">video doi:<a href="https://doi.org/10.1109/TVCG.2023.3337642/mm1"> <b>10.1109/TVCG.2023.3337642/mm1</b></a></p>
+<p align="center"> <b>Replicability Stamp</b> form the <b>Graphics Replicability Stamp Initiative<b> <img style="align: center;" src="https://www.replicabilitystamp.org/logo/Reproducibility.png" width="32" height="32" /> :<br><a href="http://www.replicabilitystamp.org#https-github-com-marcoschaefert-invado-setup"> <b>http://www.replicabilitystamp.org#https-github-com-marcoschaefert-invado-setup</b></a></p>
 
 # InVADo_setup - Repository
 
@@ -49,7 +50,7 @@ additional data includes:
   - [x] Download debug binaries
 
 - PLIP runs in the [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install) that must be installed via the script: **InVADo_MAIN_REPO\plugins\prolint\InVADo_setup\run_plip_install.cmd**
-- the rest of the needed programs are downloaded via CMake
+- the rest of the needed programs is downloaded via CMake
 
 ## Building InVADo:
 
@@ -80,11 +81,11 @@ additional data includes:
 
 PATH = \_InVADo_MAIN_REPO\plugins\prolint\InVADo_setup\
 
-- the InVADo config **InVADoConfig.mmprj** file is located in the folder **'PATH/InVADo_config'**
-- in the InVADo config the path for the ligand list and the target protein file needs to be updated
-- this can be done **manually** in the xml-based file or **graphically** as follows:
+- the InVADo config file **InVADoConfig.mmprj** is located in the folder **'PATH/InVADo_config'**
+- in the InVADo config file, the path for the **ligand list** and the **target protein file** needs to be updated
+- this can be done **manually** in the XML-based file or **graphically** as follows:
 - ### manually:
-  - open **InVADoConfig.mmprj** with an text editor and change the path stored in 'value' to e.g.:
+  - open **InVADoConfig.mmprj** with a text editor and change the path stored in 'value' to e.g.:
   - \<param name='pdbqtListFilename' value='C:\PATH\prepare_docking_data_scripts\results\results_list.txt' \/>
   - \<param name="pdbFilename" value="C:\PATH\prepare_docking_data_scripts\7nn9_autoDockTools.pdbqt" \/>
 - ### graphically:

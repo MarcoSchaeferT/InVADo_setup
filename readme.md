@@ -107,7 +107,7 @@ PATH = \_InVADo_MAIN_REPO\plugins\prolint\InVADo_setup\
 
     #### [e.g.:PATH\prepare_docking_data_scripts\results\results_list.txt*]
 
-    ### Please note: _'results'_ is created after the test docking (see [Create a New Data Set](create-a-new-data-set))
+    #### ==> please note: _'results'_ is created after the test docking (see [Create a New Data Set](#create-a-new-data-set))
 
   - Module _PDBLoader1_: Parameter: _pdbFilename_: must be set to your path of a protein file (\*.pdb)
     #### [e.g.: *PATH\prepare_docking_data_scripts/7nn9_autoDockTools.pdbqt*]

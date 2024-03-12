@@ -102,10 +102,16 @@ PATH = \_InVADo_MAIN_REPO\plugins\prolint\InVADo_setup\
 - again drag **InVADoConfig.mmprj** and drop it onto **MegaMolConf.exe** -> the following view will appear:
   ![](config.png)
 - update the paths for the ligand list and the target protein as follows:
+
   - Module _MultiPDBQTLoader1_ Parameter: _pdbqtListFilename_: must be set to your path of a ligand PDBQT file list (\*.txt)
+
     #### [e.g.:PATH\prepare_docking_data_scripts\results\results_list.txt*]
+
+    ### Please note: _'results'_ is created after the test docking (see [Create a New Data Set](create-a-new-data-set))
+
   - Module _PDBLoader1_: Parameter: _pdbFilename_: must be set to your path of a protein file (\*.pdb)
     #### [e.g.: *PATH\prepare_docking_data_scripts/7nn9_autoDockTools.pdbqt*]
+
 - for easier development set 'INSTALL' target settings of the Visual Studio project as follows:
   ![](visual_studio_config.png)
 

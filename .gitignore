@@ -4,3 +4,7 @@ tmp_plipInstall
 *.bak
 vina
 vina_split
+graphicSettings/Reference.xml
+graphicSettings/nvidiaProfileInspector.zip
+graphicSettings/nvidiaProfileInspector.exe.config
+graphicSettings/nvidiaProfileInspector.exe

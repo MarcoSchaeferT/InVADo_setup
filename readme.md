@@ -19,7 +19,7 @@ contains the **installation instructions** and **additional data** to complement
 - additional content is automatically saved to: **InVADo_MAIN_REPO\plugins\prolint\InVADo_setup**
 
 additional data includes:
-
+- PLIP installation script
 - figures of functional groups (needed for web dashboard)
 - small precalculated data set (for web part development or when running the web dashboard without InVADo desktop)
 - small molecular docking pipeline

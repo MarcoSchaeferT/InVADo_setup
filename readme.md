@@ -48,9 +48,10 @@ additional data includes:
   - [x] Precompile Standard Library
   - [x] Download debugging symbols
   - [x] Download debug binaries
-
-- PLIP runs in the [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install) that must be installed via the script: **InVADo_MAIN_REPO\plugins\prolint\InVADo_setup\run_plip_install.cmd**
-- the rest of the needed programs is downloaded via CMake
+- Windows Subsystem for Linux (WSL) [https://learn.microsoft.com/en-us/windows/wsl/install](https://learn.microsoft.com/en-us/windows/wsl/install)
+- the rest of the needed programs is downloaded via CMake (except PLIP)
+- PLIP runs in the [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install). PLIP is installed via the script: **InVADo_MAIN_REPO\plugins\prolint\InVADo_setup\run_plip_install.cmd** 
+  (this folder exists after the [InVADo_MAIN_REPO](https://github.com/MarcoSchaeferT/megamol-prolint-InVADo) is configured by using CMake)
 
 ## Building InVADo:
 

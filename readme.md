@@ -2,6 +2,7 @@
 <p align="center"><img style="align: center;" src="InVADo.png" width="128" height="128" /></p>
 <p align="center">paper doi:<a href="https://doi.org/10.1109/TVCG.2023.3337642"> <b>10.1109/TVCG.2023.3337642</b></a></p>
 <p align="center">video doi:<a href="https://doi.org/10.1109/TVCG.2023.3337642/mm1"> <b>10.1109/TVCG.2023.3337642/mm1</b></a></p>
+<p align="center">video in Suppl. Mat.:<a href="https://ieeexplore.ieee.org/document/10334517/media#media"> <b>https://ieeexplore.ieee.org/document/10334517/media#media</b></a></p>
 <p align="center"> <b>Replicability Stamp</b> form the <b>Graphics Replicability Stamp Initiative<b> <img style="align: center;" src="https://www.replicabilitystamp.org/logo/Reproducibility.png" width="32" height="32" /> :<br><a href="http://www.replicabilitystamp.org#https-github-com-marcoschaefert-invado-setup"> <b>http://www.replicabilitystamp.org#https-github-com-marcoschaefert-invado-setup</b></a></p>
 
 # InVADo_setup - Repository

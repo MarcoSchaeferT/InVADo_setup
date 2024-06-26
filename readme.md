@@ -69,7 +69,6 @@ additional data includes:
   - set 'MPI_GUESS_LIBRARY_NAME' to 'MSMPI'
   - [x] ENABLE_CUDA
   - [x] BUILD_PROLINT_PLUGIN
-  - [x] BUILD_PROTEIN_CUDA_PLUGIN
   - configure again
   - generate
   - open project

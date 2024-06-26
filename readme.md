@@ -35,7 +35,7 @@ additional data includes:
 - Windows Subsystem for Linux (WSL) with Ubuntu https://learn.microsoft.com/en-us/windows/wsl/install
   - (tested Ubuntu 22.04 LTS) https://www.microsoft.com/store/productId/9PN20MSR04DW?ocid=pdpshare
 - CMake (tested 3.26) https://cmake.org/download/
-- Visual Studio (tested version of 2022) https://visualstudio.microsoft.com/de/vs/
+- Visual Studio (tested version of 2022) https://visualstudio.microsoft.com/de/vs/ (VS Version >= 17.10 must be used with CUDA 12.4)
 - node.js v16 (tested 16.20.1) https://nodejs.org/en/blog/release/v16.20.0
 - Microsoft MPI (install both msmpisdk.msi; msmpisetup.exe) https://www.microsoft.com/en-us/download/details.aspx?id=105289
 - Firefox (tested 116.0.1) https://www.mozilla.org/de/firefox/new/
